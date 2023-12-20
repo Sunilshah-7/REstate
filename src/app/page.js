@@ -86,7 +86,7 @@ export default function Home() {
         title2="Dream Home"
         desc1="Explore Apartments, Villas, Homes"
         desc2="and more"
-        buttonText="Explore Renting"
+        buttonText="Explore Selling"
         linkName="/search?purpose=for-rent"
         imageUrl="https://blog.pamgolding.co.za/wp-content/uploads/2016/09/helderfontein-banner-1.jpg"
       />
