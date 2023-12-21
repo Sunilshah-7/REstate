@@ -45,7 +45,7 @@ const PropertyDetails = ({ params }) => {
           p="1"
           justifyContent="space-between"
           w="250px"
-          color="blue.400">
+          color="green.400">
           {property.rooms}
           <FaBed /> | {property.baths} <FaBath /> | {millify(property.area)}{" "}
           sqft <BsGridFill />

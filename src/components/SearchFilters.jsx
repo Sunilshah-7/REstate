@@ -1,17 +1,6 @@
 import { useState, useCallback } from "react";
-import {
-  Flex,
-  Select,
-  Box,
-  text,
-  Input,
-  Spinner,
-  Icon,
-  Button,
-} from "@chakra-ui/react";
+import { Flex, Select, Box } from "@chakra-ui/react";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
-import { MdCancel } from "react-icons/md";
-import Image from "next/image";
 import { filterData, getFilterValues } from "../../utils/filterData";
 
 const SearchFilters = () => {
@@ -19,23 +8,6 @@ const SearchFilters = () => {
   const router = useRouter();
   const path = usePathname();
   const searchParams = useSearchParams();
-
-  // const search = searchParams.entries();
-
-  // const searchProperties = (filterValues) => {
-  //   const path = router.pathname;
-  //   const query = router.query;
-
-  //   const values = getFilterValues(filterValues);
-  //   console.log("values", path);
-
-  //   values.forEach((item) => {
-  //     if (item.value && filterValues?.[item.name]) {
-  //       query[item.name] = item.value;
-  //     }
-  //   });
-  //   router.push({ pathname: path, query: query });
-  // };
 
   // Get a new searchParams string by merging the current
   // searchParams with a provided key/value pair
@@ -58,11 +30,6 @@ const SearchFilters = () => {
         search[item.name] = item.value;
       }
     });
-
-    console.log("path", path);
-    console.log("search", searchParams);
-    //router.push(`${Object.keys(search)[0]}=${Object.values(search)[0]}`);
-    // router.push({ pathname: path, query: searchParams });
     router.push(
       path +
         "?" +

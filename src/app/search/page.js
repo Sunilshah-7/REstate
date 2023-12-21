@@ -47,7 +47,7 @@ const Search = () => {
     <Box>
       <Flex
         cursor="pointer"
-        bg="gray.100"
+        bg="green.100"
         borderBottom="1px"
         borderColor="gray.200"
         p="2"

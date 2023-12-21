@@ -60,7 +60,7 @@ const Property = ({
           p="1"
           justifyContent="space-between"
           w="250px"
-          color="blue.400">
+          color="green.400">
           {rooms} <FaBed /> | {baths} <FaBath /> | {millify(area)} sqft{" "}
           <BsGridFill />
         </Flex>
